@@ -16,10 +16,10 @@ steps:
 #    echo Add other tasks to build, test, and deploy your project.
 #    echo See https://aka.ms/yaml
 #  displayName: 'Run a multi-line script'
-- task: UiPathTest@2
+
+- task: UiPathRunJob@2
   inputs:
-    testTarget: 'TestSet'
     orchestratorConnection: 'MainFramework'
-    testSet: 'TS_HyperAutomation'
+    processName: 'UipathProject_TestAutomation_Tests'
     folderName: 'Testing21TxUiPathFolder'
-    timeout: '6000'
+    user: 'txhyd-pc-02\testing'
