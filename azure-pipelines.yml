@@ -17,9 +17,9 @@ steps:
 #    echo See https://aka.ms/yaml
 #  displayName: 'Run a multi-line script'
 
-- task: UiPathRunJob@2
+- task: UiPathTest@2
   inputs:
+    testTarget: 'TestSet'
     orchestratorConnection: 'MainFramework'
-    processName: 'UipathProject_TestAutomation_Tests'
+    testSet: 'Tx_NewLibrary'
     folderName: 'Testing21TxUiPathFolder'
-    user: 'txhyd-pc-02\testing'
