@@ -6,7 +6,8 @@
 trigger:
 - main
 
-pool: TXHYD-PC-02
+pool: 
+vmImage: windows-latest
 
 steps:
 - script: echo Hello, world!
